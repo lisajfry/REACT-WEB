@@ -1,22 +1,36 @@
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
-import Work from "./Components/Work";
-import Testimonial from "./Components/Testimonial";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+import Layanan from "./Components/Layanan";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
+import PesanLayanan from "./Components/PesanLayanan";
+import FormReservasi from "./Components/FormReservasi";
+import AddUser from "./Components/pelayanan/AddUser";
+import EditUser from "./Components/pelayanan/EditUser";
+import User from "./Components/pelayanan/User";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <Home />
-      <About />
-      <Work />
-      <Testimonial />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={ <Home /> } />
+        <Route path="/about" element={ <About /> } />
+        <Route path="/layanan" element={ <Layanan /> } />
+        <Route path="/login" element={ <Login /> } />
+        <Route path="/register" element={ <Register />} />
+        <Route path="/pesanlayanan" element={<PesanLayanan/>} />
+        <Route path="/formreservasi" element={<FormReservasi/>} />
+        <Route path="/pelayanan/user/AddUser" element={<AddUser/>} />
+        <Route path="/pelayanan/user/EditUser/:Id" element={<EditUser/>} />
+        <Route path="/pelayanan/user" element={<User/>} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,35 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color:  #ce9ccb;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    color: #333;
+  }
+  
+  .footer-icons svg {
+    cursor: pointer;
+  }
+  
+  .footer-section-two {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  
+  .footer-section-columns {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-section-columns span {
+    margin-bottom: 0.5rem;
+    color: #666;
+    cursor: pointer;
+  }
+  

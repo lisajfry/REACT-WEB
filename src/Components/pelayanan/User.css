@@ -1,0 +1,62 @@
+/* pelayanan.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFEFF0; /* Very Light Pink */
+  display: flex;
+  flex-direction: column; /* Mengatur tata letak elemen dalam kolom */
+}
+
+form {
+  margin-bottom: 20px; /* Jarak antara form dan tabel */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #FFC1CC; /* Light Pink */
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ce9ccb; /* Soft Pink */
+  color: white;
+}
+
+button {
+  background-color: #ce9ccb; /* Soft Pink */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ce9ccb; /* Slightly Darker Soft Pink */
+}
+
+/* Responsive layout - makes the menu and the content stack on top of each other */
+@media (max-width: 600px) {
+  .container, table, th, td {
+    width: 100%;
+    display: block;
+  }
+}

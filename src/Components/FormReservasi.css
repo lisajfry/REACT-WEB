@@ -1,0 +1,45 @@
+body {
+    background-color: #f9edf7;
+  }
+  
+  .form-reservasi {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px; 
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .form-reservasi label {
+    margin-bottom: 10px;
+  }
+  
+  .form-reservasi input,
+  .form-reservasi select {
+    width: 100%;
+    padding: 10px; /* Atur ini sesuai kebutuhan Anda */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ini akan memastikan bahwa padding dan border termasuk dalam lebar total elemen */
+  }
+  
+  .form-reservasi input[type="submit"] {
+    cursor: pointer;
+    background-color: rgb(235, 205, 223);
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+  }
+  
+  .form-reservasi input[type="submit"]:hover {
+    background-color:  #ce9ccb;
+  }
+  
